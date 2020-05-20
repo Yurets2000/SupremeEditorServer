@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<SupremeEdtitor>
+    <Notifications>
+        <Notification id="1">
+            <PublishingDate>2020-20-05T00:00:00</PublishingDate>
+            <Description>SupremeEditorFx 1.0.2 Available Now</Description>
+            <HtmlContent>
+                <![CDATA[
+                    <html>
+                        <body>
+                            <h1>In SupremeEditorFx 1.0.2:</h1>
+                            <ul>
+                                <li>Code highlighting added</li>
+                                <li>Code completion added</li>
+                                <li>Some minor bugs fixed</li>
+                            </ul>
+                            <p>Visit our official site to get update!</p>
+                        </body>
+                    </html>
+                ]]>
+            </HtmlContent>
+        </Notification>
+        <Notification id="2">
+            <PublishingDate>2020-20-05T00:10:00</PublishingDate>
+            <Description>World Code Competition</Description>
+            <HtmlContent>
+                <![CDATA[
+                    <html>
+                        <body>
+                            <p>We are happy to announce that SupremeEditorFx creator will hold a code competition at Jun 01.</p>
+                        </body>
+                    </html>
+                ]]>
+            </HtmlContent>
+        </Notification>
+    </Notifications>
+</SupremeEdtitor>
