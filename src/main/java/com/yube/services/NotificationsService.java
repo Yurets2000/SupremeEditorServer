@@ -26,4 +26,12 @@ public class NotificationsService {
     public List<Notification> getAllNotifications() {
         return notificationsProcessor.getAllNotifications();
     }
+
+    public int getNotificationsCount() {
+        return notificationsProcessor.getNotificationsCount();
+    }
+
+    public Notification getNotificationByPosition(int position) {
+        return notificationsProcessor.getNotificationByPosition(position);
+    }
 }

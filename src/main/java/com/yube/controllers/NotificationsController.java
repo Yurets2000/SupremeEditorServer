@@ -20,6 +20,13 @@ public class NotificationsController {
     }
 
     @GET
+    @Path("/count")
+    @Produces(MediaType.APPLICATION_JSON)
+    public int getNotificationsCount() {
+        return notificationsService.getNotificationsCount();
+    }
+
+    @GET
     @Path("/all")
     @Produces(MediaType.APPLICATION_JSON)
     public List<Notification> getNotifications() {
@@ -31,5 +38,12 @@ public class NotificationsController {
     @Produces(MediaType.APPLICATION_JSON)
     public List<Notification> getLastNotifications(@PathParam("count") int count) {
         return notificationsService.getLastNotifications(count);
+    }
+
+    @GET
+    @Path("/{position}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Notification getNotificationByPosition(@PathParam("position") int position) {
+        return notificationsService.getNotificationByPosition(position);
     }
 }

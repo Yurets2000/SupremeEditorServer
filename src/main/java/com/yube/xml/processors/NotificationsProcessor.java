@@ -26,6 +26,16 @@ public class NotificationsProcessor extends AbstractProcessor {
         return mapNotifications(notifications);
     }
 
+    public int getNotificationsCount() {
+        return document.numberValueOf("count(//Notification)").intValue();
+    }
+
+    public Notification getNotificationByPosition(int position) {
+        Element notification = (Element) document.selectSingleNode("//descendant::Notification[position()=last()-" + position + "]");
+        if (notification == null) throw new IllegalArgumentException("Can't get such Notification");
+        return mapNotification(notification);
+    }
+
     private List<Notification> mapNotifications(List notificationNodes) {
         List<Notification> notifications = new ArrayList<>();
         notificationNodes.forEach(o -> notifications.add(mapNotification(o)));
